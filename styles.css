@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #ECFDF5;
+    color: #D5D4D8;
+}
+
+.container {
+    background: #1F2937;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    width: 75%;
+    margin: 10% auto 0;
+    max-width: 30em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.title {
+    color: #10B981;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.noChar {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7em 1em;
+    margin: 0 0 1em;
+    width: 14rem;
+}
+
+#error {
+    color: red;
+    display: none;
+}
+
+.generate-btn {
+    background: #10B981;
+    color: #D5D4D8;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.7em 1em;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.generate-btn:hover {
+    background: #23994e;
+}
+
+.options {
+    margin: 20px 0;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+#checked {
+    color: #d5d4d8a4;
+    display: none;
+}
+
+.password {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.password p {
+    background: #273549;
+    width: 47%;
+    border-radius: 0.5rem;
+    padding: 0.7em 1em;
+    color: #55F991;
+    height: 2.6em;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.password p:hover {
+    text-decoration: underline;
+}
+
+#copied {
+    color: #55F991;
+    text-align: center;
+    display: none;
+}
