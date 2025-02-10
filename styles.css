@@ -79,12 +79,12 @@ p {
 .password {
     display: flex;
     justify-content: space-around;
-    gap: 2em;
+    gap: 1em;
 }
 
 .password p {
     background: #273549;
-    width: 47%;
+    width: 45%;
     border-radius: 0.5rem;
     padding: 0.7em 1em;
     color: #55F991;
@@ -102,4 +102,20 @@ p {
     color: #55F991;
     text-align: center;
     display: none;
+}
+
+@media (max-width: 383px) {
+    .container {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 1.808rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .noChar {
+        width: 100%;
+    }
 }
