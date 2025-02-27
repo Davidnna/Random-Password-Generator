@@ -3,18 +3,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="favicon.png">
-		<link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- <link rel="icon" type="image/png" href="https://i.postimg.cc/8zWYNbfr/favicon.png"> -->
+		<link rel="stylesheet" href="styles/styles.css">
 		<title>Random Password Generator</title>
 	</head>
 	<body>
-		<div class="container">
-			<h1>Generate a</h1>
-			<h1 class="title">random password</h1>
+		<main class="container">
+			<!-- Header -->
+			<hgroup>
+				<h1>Generate a</h1>
+				<h1 class="title">random password</h1>
+			</hgroup>
 			<p>Never use an insecure password again.</p>
+			<!-- Input -->
 			<input type="number" class="noChar" id="noChar" min="8" max="25" placeholder="Type No. of Characters Here"><br>
 			<p id="error">Input a valid number</p>
 			<button type="button" class="generate-btn" id="generate" onclick="generate()">Generate Password</button>
+			<!-- Preferences -->
 			<div class="options">
 				<label><input type="checkbox" id="uppercase"> Include Uppercase</label>
 				<label><input type="checkbox" id="lowercase"> Include Lowercase</label>
@@ -22,12 +28,13 @@
 				<label><input type="checkbox" id="symbols"> Include Symbols</label>
 				<p id="checked">Select at least one Option</p>
 			</div>
+			<!-- Password -->
 			<div class="password">
 				<p id="password" onclick="copyText(password)"></p>
 				<p id="password1" onclick="copyText(password1)"></p>
 			</div>
 			<p id="copied">Copied!</p>
-		</div>
-		<script src="script.js"></script>
+		</main>
+		<script src="script/script.js"></script>
 	</body>
 </html>

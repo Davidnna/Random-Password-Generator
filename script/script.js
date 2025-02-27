@@ -2,15 +2,15 @@ const upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 const lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 const Numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const Symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",".","?","/"];
-let noChar = document.getElementById("noChar");
-let uppercase = document.getElementById("uppercase");
-let lowercase = document.getElementById("lowercase");
-let numbers = document.getElementById("numbers");
-let symbols = document.getElementById("symbols");
-let password = document.getElementById("password");
-let password1 = document.getElementById("password1");
-let error = document.getElementById("error");
-let copied = document.getElementById("copied");
+const noChar = document.getElementById("noChar");
+const uppercase = document.getElementById("uppercase");
+const lowercase = document.getElementById("lowercase");
+const numbers = document.getElementById("numbers");
+const symbols = document.getElementById("symbols");
+const password = document.getElementById("password");
+const password1 = document.getElementById("password1");
+const error = document.getElementById("error");
+const copied = document.getElementById("copied");
 const noCharRegex = /^\d+$/;
 
 function generate() {
@@ -19,6 +19,8 @@ let final = [];
         error.style.display = "block";
         password.textContent = "";
         password1.textContent = "";
+        password.style.height = "2.6em";
+        password1.style.height = "2.6em";
     }
     else {
         error.style.display = "none";
